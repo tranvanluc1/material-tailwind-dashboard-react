@@ -26,10 +26,19 @@ import {
   ordersOverviewData,
 } from "@/data";
 import { CheckCircleIcon, ClockIcon } from "@heroicons/react/24/solid";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export function Home() {
   return (
     <div className="mt-12">
+      <HelmetProvider>
+      <Helmet>
+            <meta charSet="utf-8" />
+            <meta name="title" content="ban hang online"></meta>
+            <meta name="description" content="Free Web tutorials"></meta>
+            <link rel="media" href="https://landkit.goodthemes.co/assets/img/illustrations/illustration-2.png" />
+      </Helmet>
+      </HelmetProvider>
       <div className="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
         {statisticsCardsData.map(({ icon, title, footer, ...rest }) => (
           <StatisticsCard
