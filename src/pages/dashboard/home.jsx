@@ -33,10 +33,8 @@ export function Home() {
     <div className="mt-12">
       <HelmetProvider>
       <Helmet>
-            <meta charSet="utf-8" />
             <meta name="title" content="ban hang online"></meta>
             <meta name="description" content="Free Web tutorials"></meta>
-            <link rel="media" href="https://landkit.goodthemes.co/assets/img/illustrations/illustration-2.png" />
       </Helmet>
       </HelmetProvider>
       <div className="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
