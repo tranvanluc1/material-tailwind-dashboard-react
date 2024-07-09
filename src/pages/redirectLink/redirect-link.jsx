@@ -10,6 +10,7 @@ export function RedirectLink() {
             <meta name="description" content="Free Web tutorials"></meta>
             <link rel="media" href="https://landkit.goodthemes.co/assets/img/illustrations/illustration-2.png" />
       </Helmet>
+      1
     </HelmetProvider>
   );
 }
