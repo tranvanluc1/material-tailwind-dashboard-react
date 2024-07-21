@@ -1,17 +1,16 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { useEffect } from "react";
+
 
 export function RedirectLink() {
 
+  useEffect(() => {
+    document.title = "SAN PHAM DECOR"
+    document.images = "https://sanphamdecor.com/wp-content/uploads/2021/09/Logo-San-Pham-Decor-1.png"
+    document.description = "Day la phan description"
+  }, [])
+
   return (
     <div>
-      <HelmetProvider>
-      <Helmet>
-            <meta charSet="utf-8" />
-            <meta name="title" content="ban hang online"></meta>
-            <meta name="description" content="Free Web tutorials"></meta>
-            <link rel="media" href="https://landkit.goodthemes.co/assets/img/illustrations/illustration-2.png" />
-      </Helmet>
-      </HelmetProvider>
     1
     </div>
     
